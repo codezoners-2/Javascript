@@ -1,0 +1,221 @@
+<!doctype html>
+<!--ALL MATERIAL COPYRIGHT THEODOROS PAPATHEODOROU contact@artech.cc-->
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>introduction to CSS</title>
+
+		<meta name="description" content="class notes">
+		<meta name="author" content="Theodoros Papatheodorou">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/sky.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>introduction to Javascript via</h2>
+					<img height="500" src="assets/p5js-beta.svg">
+					<p style="text-align:left; font-size: 50%;">&copy; Theodoros Papatheodorou
+					</p>
+				</section>
+
+				<section>
+					<h2>why via p5.js?</h2>
+				</section>
+
+				<section>
+					<h2>we love Processing</h2>
+					<p>Processing.py</p>
+					<p>p5.js</p>
+				</section>
+
+				<section>
+					<h2>hello p5.js!</h2>
+					<p>watch<a href="http://hello.p5js.org/"> this</a> video</p>
+				</section>
+				
+				<section>
+					<h2>What is p5.js?</h2>
+					<ul>
+						<li>uses Processing as a paradigm, but not limited to the canvas</li>
+						<li>make coding accessible for artists, designers, educators, and beginners—and reinterprets this for today's web.</li>
+						<li>helps you understand relationship between html, css, Javascript</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>similarities to Processing</h2>
+				</section>
+
+
+				<section>
+					<h2>differences to Processing</h2>
+					<ul>
+						<li>createCanvas() vs. size()</li>
+						<li>var vs. other types</li>
+						<li>all function take the word "function" before their name</li>
+						<li>arrays are declared slightly differently</li>
+						<li>not everything in Processing has been implemented (3D, PShape, PFont)</li>
+						<li>we inherit all the Javascript stuff</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>First sketch & using the library</h2>
+					<ul>
+						<li>from a local file</li>
+						<li>from the net (using CDN)</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">p5js_101</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>Placing the canvas on the page</h2>
+					<p>all elements are added at the bottom of the other elements of the html unless:</p>
+					<ul>
+						<li>you use the position() function for that element (treats position as absolute)</li>
+						<li>you use CSS rules to define where it should be placed (better)</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">p5js_positioning / p5js_positioning_advanced</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+
+				<section>
+					<h2>help & reference</h2>
+					<p>p5.js has a great site</p>
+					<ul>
+						<li><a href="http://p5js.org/learn/">learning p5.js</a></li>
+						<li><a href="http://p5js.org/reference/">online reference of main library</a></li>
+						<li><a href="http://p5js.org/learn/#examples">examples</a></li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>exercise 1</h2>
+					<p>Picasso online</p>
+					<p><img width="700" src="assets/exercise1.png"></a></p>
+					<ul>
+						<li>discuss APIs</li>
+						<li>show sheep market</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Beyond the canvas with p5.js</h2>
+					<ul>
+						<li>One of the core ideas behind p5.js is that your sketch is not just the graphics canvas but the whole web page in your browser.</li>
+						<li>the p5.dom library that makes it easy to interact with other HTML5 objects</li>
+						<li>helps you understand relationship between html, css, Javascript</li>
+						<li>we include that library like any sketch</li>
+					</ul>
+				</section>
+				
+				<section>
+					<h2>Elements on page vs. canvas</h2>
+					<ul>
+						<li>When drawing in canvas while the loop is running, you need to redraw everything in the scene every frame.</li>
+						<li>when working with elements, they hold a static state that you can change at any time by calling one of their methods</li>
+					</ul>
+					<div class="codeRefCont">
+					<p class="codeRefText">modifyingElements</p>
+					<img class="codeRefPic" src="assets/github_icon.png">
+				</section>
+				
+				<section>
+					<h2>Elements vs. canvas positioning</h2>
+					<p>html elements we define via the p5.dom library will go after the canvas unless:</p>
+					<ul>
+						<li>we specify an absolute position with the "position()" function</li>
+						<li>use ids/classes and specify CSS rules</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>help & reference</h2>
+					<p>p5.js has a great site</p>
+					<ul>
+						<li><a href="http://p5js.org/learn/">learning p5.js</a></li>
+						<li><a href="http://p5js.org/reference/">online reference of main library</a></li>
+						<li><a href="http://p5js.org/learn/#examples">examples</a></li>
+						<li><a href="http://p5js.org/libraries/"><strong>libraries</strong></li>
+					</ul>
+				</section>
+
+
+			</div>
+		</div>
+
+
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/head.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/js/reveal.min.js");></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				width: 1100,
+				height: 850,
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'http://cdnjs.cloudflare.com/ajax/libs/reveal.js/2.6.2/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

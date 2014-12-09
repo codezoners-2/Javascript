@@ -1,0 +1,70 @@
+* hello p5.js intro video
+
+* HOW GREAT IS PROCESSING!!!! (link with p5js, python) - make analogy with language
+* don't afrain to venture into new territories
+
+
+* to make coding accessible for artists, designers, educators, and beginners—and reinterprets this for today's web.
+Using the original metaphor of a software sketchbook, p5.js has a full set of drawing functionality. However, you're not limited to your drawing canvas, you can think of your whole browser page as your sketch! For this, p5.js has addon libraries that make it easy to interact with other HTML5 objects, including text, input, video, webcam, and sound.
+Through this framework beginners begin to explore and understand HTML, JavaScript, and CSS, and the way they work together in the browser
+implements stuff of javascript
+https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D
+
+
+* what great things you inherit
+	- (ie. how similar it is)
+	- vs. processing.js
+		Processing.js is a port of Processing to JS, using regex to convert Java into JS. It is a good tool for those that want to run simple sketches on the web, however, it is quite opaque. It can be difficult for someone to understand how it works, how to fix things when it doesn't work, or how to modify or extend the library. As Processing.js says on their website, "it's not magic, but almost."
+	- hello processing.py
+	
+	
+* using the library (local file vs. CDN)
+
+
+* major diffs:
+	- createCanvas vs. size()
+	- var
+	- function
+	- arrays
+	- Not everything in Processing is implemented in p5.js, but we are working on it! Right now there is no 3D, PShape or PFont equivalent
+
+* basic sketch example
+
+
+* placing the canvas on page:
+	When a new element is added using one of the create methods (either a canvas, div, img, etc), you may notice that it doesn't show up in the upper left corner (0,0), but instead appends to the end of the page.
+	- using position()
+		Calling this method overrides the default positioning of the element (by applying a CSS style position:absolute), allowing you to give it a position relative to the upper left of the window (0,0).
+	- using CSS / parent
+
+
+* dynamic size of canvas
+
+
+#### BEYOND THE CANVAS ####
+
+* One of the core ideas behind p5.js is that your sketch is not just the graphics canvas but the whole web page in your browser. For this reason, there is the p5.dom library that makes it easy to interact with other HTML5 objects, including text, hyperlink, image, input, video, audio, and webcam.
+
+* including the library (also CDN)
+<script type='text/javascript' src='relative/path/to/your/p5.dom.js'>
+
+* elements of page vs. canvas
+	- When drawing in canvas while the loop is running, you typically need to redraw everything in the scene every frame.
+	- However, when you are working with elements, they hold a static state that you can change at any time by calling one of their methods.
+
+* global vs. element listeners
+
+* some cool functions:
+	- createA
+	- createDiv
+	- style vs. CSS
+
+* exercise with server/client with drawing
+	- good opportunity to talk a tiny bit about APIs
+	- use flask and processing.py as front end
+	- show them the sheep market 
+
+* christmas assignment (discuss with Nick)
+
+## STUFF TO COVER FOR SURE
+* event listeners (global vs. element specific)

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Starter Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+		 <div class="header">
+		  <nav>
+			<ul class="nav nav-pills pull-right">
+			  <li role="presentation" class="active"><a href="#">Home</a></li>
+			  <li role="presentation"><a href="#">About</a></li>
+			  <li role="presentation"><a href="#">Contact</a></li>
+			</ul>
+		  </nav>
+		
+		<!-- code that links to the disease name -->
+		<h3 class="text-muted"><span id="diseaseNameSpan"></span> simulator</h3>
+
+		<!-- code that links to the canvas-->
+		<div class="container">
+		  <div class="row">
+			<div class="col-lg-12">
+			  <div id='myContainer'></div>
+			</div>
+		  </div>
+		</div>
+    
+    </div> <!-- container -->
+    
+    
+<div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Input</h2>
+          <h4>Disease name: <span id="diseaseName"></span></h4>
+          <h4>Population size: <span id="populationSize"></span></h4>
+          <h4 id="submitParams"></h4>
+          <h4>Recovery rate: <span id="recoveryRate"></span></h4>
+          <h4>Death likelyhood: <span id="deathLikelyhood"></span></h4>
+        </div>
+        <div class="col-md-6">
+          <h2>Population State:</h2>
+          <h4>People alive: <div id="peopleAlive"></div></h4>
+          <h4 id="peopleDead"></h4>
+          <h4 id="peopleHealthy"></h4>
+          <h4 id="peopleSick"></h4>
+       </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>&copy; Theodoros Papatheodorou (contact [at] artech [dot] cc)</p>
+      </footer>
+    </div> <!-- /container -->
+   
+   
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/ie10-viewport-bug-workaround.js"></script>
+    
+    <script language="javascript" src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.13/p5.min.js"></script>
+	<script language="javascript" src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.3.13/addons/p5.dom.js"></script>
+	<script language="javascript" src="sketch.js"></script>
+  </body>
+</html>
