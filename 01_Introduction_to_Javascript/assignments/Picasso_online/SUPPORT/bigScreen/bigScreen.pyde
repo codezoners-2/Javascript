@@ -3,6 +3,7 @@
 # in the relevant directory FIRST. Otherwise it gets "None" and it can't handle it
 # I didn't make it smarter because I wanted them not to be too confused.
 # I wanted to keep the code to the minimum
+import math
 
 currentSketchNum = 0
 previousSketchNum = 0;

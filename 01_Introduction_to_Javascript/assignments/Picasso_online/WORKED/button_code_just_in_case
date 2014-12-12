@@ -1,0 +1,5 @@
+  //DOM STUFF ///////////////////////////
+  //button = createButton('submit drawing');
+  //button.parent('myCanvasContainer');
+  //button.mousePressed(submitDrawing);
+  //button.class("btn btn-default");
