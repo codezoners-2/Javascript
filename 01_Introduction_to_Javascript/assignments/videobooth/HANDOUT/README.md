@@ -6,7 +6,7 @@ Here's a fun little exercise for Christmas. It draws on what you've done already
 
 If you open `index.html` in your browser, you should see a video window showing, live, what your camera is seeing. (You may need to click an option giving the page permission to use the camera.) If you were a cat, you might something like this:
 
-... plain ...
+  ![Angry Cat](plain.png)
 
 - but hopefully your image will be moving.
 
