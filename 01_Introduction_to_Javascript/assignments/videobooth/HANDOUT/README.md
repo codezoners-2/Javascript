@@ -4,11 +4,11 @@
 
 Here's a fun little exercise for Christmas. It draws on what you've done already in p5.js, and brings in a bit of interactive multimedia. In order to work with this code you'll need a laptop with a built-in camera (or an external USB camera).
 
-If you open `index.html` in your browser, you should see a video window showing, live, what your camera is seeing. (You may need to click an option giving the page permission to use the camera.) If you were a cat, you might something like this:
+If you open `index.html` in your browser, you should see a video window showing, live, what your camera is seeing. (You may need to click an option giving the page permission to use the camera.) If you were a cat, you might see something like this:
 
   ![Angry Cat](plain.png)
 
-- but hopefully your image will be moving.
+... but hopefully your image will be moving.
 
 All of the code for this page has been provided.
 
