@@ -18,7 +18,7 @@ Exercises:
 
   ![Video Inversion](invert.png)
 
-  This uses image filters: there's more information (and most of the solution) [http://p5js.org/learn/examples/Dom_Video_Capture.php](here).
+  This uses image filters: there's more information (and most of the solution) [here](http://p5js.org/learn/examples/Dom_Video_Capture.php).
 
 - Can you implement this Andy Warhol "pop art" effect?
 
